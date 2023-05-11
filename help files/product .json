@@ -1,0 +1,29 @@
+db.Products.insertMany(
+[
+  {
+    "Name": "Asus Laptop",
+    "Category": "Computers",
+    "Summary": "Asus Laptop 16Giga RAM",
+    "Description": "Asus Laptop 16Giga RAM",
+    "ImageFile": "ImageFileb1",
+    "Price": 170
+  },
+    {
+     "Name": "HP Laptop",
+    "Category": "Computers",
+    "Summary": "HP Laptop 16Giga RAM",
+    "Description": "HP Laptop 16Giga RAM",
+    "ImageFile": "ImageFileb2",
+    "Price": 200
+  }
+  ,
+    {
+     "Name": "HP Laptop",
+    "Category": "Computers",
+    "Summary": "HP Laptop 32Giga RAM",
+    "Description": "HP Laptop 32Giga RAM",
+    "ImageFile": "ImageFileb2",
+    "Price": 240
+  }
+]
+)
