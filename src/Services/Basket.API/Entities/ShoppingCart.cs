@@ -14,7 +14,13 @@
             this.userName = userName;
         }
 
-        public decimal TotalPrice() => Items.Sum(x => x.Quantity * x.Price);
+        public decimal TotalPrice
+        {
+            get
+            {
+                return Items.Sum(x => x.Quantity * x.Price);
+            }
+        }
         //{
         //  return  Items.Sum(x => x.Quantity * x.Price);
         //}

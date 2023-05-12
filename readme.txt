@@ -15,3 +15,11 @@ docker exec -it shopping-mongo /bin/bash
  docker run -d -p 6379:6379 --name shopping-redis redis
  docker exec -it shopping-redis /bin/bash
  
+ 
+ portainer
+ username:admin
+ pass:admin123admin
+ http://localhost:9000/#!/2/docker/containers
+ 
+ 
+ 
