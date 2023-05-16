@@ -1,6 +1,6 @@
 --mongo
 
-docker run -d -p 27017:27017 --name CatalogDb mongo
+docker run -d -p 27017:27017 --name ShoppingDB mongo
 
 connect databse
 docker exec -it catalogdb /bin/bash
