@@ -1,13 +1,11 @@
-using Catalog.API.Extenstions;
-using Microsoft.Extensions.Configuration;
+using Discount.API.Extenstions;
 
 var builder = WebApplication.CreateBuilder(args);
-
+ConfigurationManager configurationManager = builder.Configuration;
 // Add services to the container.
-ConfigurationManager configuration = builder.Configuration; // allows both to access and to set up the config
-
+builder.Services.Injections(configurationManager);
 builder.Services.AddControllers();
-builder.Services.Injections(configuration);
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

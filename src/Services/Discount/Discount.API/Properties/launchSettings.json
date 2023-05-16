@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Basket.API": {
+    "Discount.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
@@ -30,7 +30,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:57903",
+      "applicationUrl": "http://localhost:16027",
       "sslPort": 0
     }
   }

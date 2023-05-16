@@ -29,10 +29,11 @@ namespace Catalog.API.Controllers
         }
 
         // GET api/<CatalogController>/5
-        [HttpGet("{id:length(24)}", Name = "GetProduct")]
+        [HttpGet]
+        [Route("[action]/{id:length(24)}", Name = "GetProduct")]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType(typeof(Product), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<Product>> Get(string id)
+        public async Task<ActionResult<Product>> GetProduct(string id)
         {
             var result = await _productService.GetProductById(id);
             if (result == null)
