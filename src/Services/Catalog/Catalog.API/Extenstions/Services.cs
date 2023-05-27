@@ -8,7 +8,7 @@ namespace Catalog.API.Extenstions
 {
     public static class Services
     {
-        public static void Injections(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection Injections(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<ICatalogDbContext, CatalogDbContext>();
             services.AddScoped<IProductService, ProductService>();
@@ -32,6 +32,7 @@ namespace Catalog.API.Extenstions
             //    var loggerFactory = sp.GetService<ILoggerFactory>();
             //    // ...
             //}
+            return services;
 
         }
     }

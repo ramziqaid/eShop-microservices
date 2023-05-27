@@ -4,11 +4,7 @@
     {
         public string userName { set; get; }
         public List<ShoppingCartItem> Items { get; set; } = new List<ShoppingCartItem>();
-
-        public ShoppingCart()
-        {
-
-        }
+ 
         public ShoppingCart(string userName)
         {
             this.userName = userName;

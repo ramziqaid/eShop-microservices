@@ -1,7 +1,4 @@
 ﻿using AutoMapper;
-using Dapper;
-using Discount.API.Services;
-using Discount.Grpc.Data;
 using Discount.Grpc.Entities;
 using Discount.Grpc.Protos;
 using Grpc.Core;

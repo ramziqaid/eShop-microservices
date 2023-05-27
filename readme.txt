@@ -8,7 +8,11 @@ http://localhost:3000/databaseStats
 
 use database
 docker exec -it CatalogDb mongosh
- db.Products.insertMany( [ { "Name": "Asus Laptop", "Category": "Computers", "Summary": "Asus Laptop 16Giga RAM", "Description": "Asus Laptop 16Giga RAM", "ImageFile": "ImageFileb1", "Price": 170 }, { "Name": "HP Laptop", "Category": "Computers", "Summary": "HP Laptop 16Giga RAM", "Description": "HP Laptop 16Giga RAM", "ImageFile": "ImageFileb2", "Price": 200 }, { "Name": "HP Laptop", "Category": "Computers", "Summary": "HP Laptop 32Giga RAM", "Description": "HP Laptop 32Giga RAM", "ImageFile": "ImageFileb2", "Price": 240 }])
+ db.Products.insertMany( [ { "Name": "Asus Laptop", "Category": "Computers", "Summary": "Asus Laptop 16Giga RAM",
+ "Description": "Asus Laptop 16Giga RAM", "ImageFile": "ImageFileb1", "Price": 170 }, { "Name": "HP Laptop", 
+ "Category": "Computers", "Summary": "HP Laptop 16Giga RAM", "Description": "HP Laptop 16Giga RAM", "ImageFile": 
+ "ImageFileb2", "Price": 200 }, { "Name": "HP Laptop", "Category": "Computers", "Summary": "HP Laptop 32Giga RAM",
+ "Description": "HP Laptop 32Giga RAM", "ImageFile": "ImageFileb2", "Price": 240 }])
 
 
 
@@ -22,6 +26,7 @@ docker run -d -p 8081:8081 --name mongoGUI mongo-express
 docker run -it --rm -p 8081:8081 --name mongoGUI mongo-express
 --
  docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
+ docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up --build
  docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down
 
  docker container run --d --p 8080:80 --name mvcapp webapplication1:dev
@@ -44,4 +49,6 @@ docker run -it --rm -p 8081:8081 --name mongoGUI mongo-express
  
    
    
+ SqlServer ______________________________________________________________________
+ 
  

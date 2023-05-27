@@ -27,6 +27,7 @@ namespace Discount.API.Controllers
         {
             var result = await _couponServices.GetDiscount(productId);
             //_logger.LogInformation("get Product");
+            if (result==null) { return NotFound(); }
             return Ok(result);
         }
          
