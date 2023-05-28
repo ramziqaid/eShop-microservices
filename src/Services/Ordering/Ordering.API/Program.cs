@@ -13,15 +13,15 @@ builder.Services.Injections(configurationManager);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-IHost host = builder.Build();
-host.MigrateDatabase<OrderContext>((context, services) =>
-{
-    var logger = services.GetService<ILogger<OrderContextSeed>>();
-    OrderContextSeed
-        .SeedAsync(context, logger)
-        .Wait();
-});
-host.Run();
+//IHost host = builder.Build();
+//host.MigrateDatabase<OrderContext>((context, services) =>
+//{
+//    var logger = services.GetService<ILogger<OrderContextSeed>>();
+//    OrderContextSeed
+//        .SeedAsync(context, logger)
+//        .Wait();
+//});
+//host.Run();
 
 
 var app = builder.Build();

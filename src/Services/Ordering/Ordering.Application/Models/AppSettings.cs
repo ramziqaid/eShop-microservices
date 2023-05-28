@@ -9,7 +9,7 @@ namespace Ordering.Application.Models
     public class AppIdentitySettings
     {
         public EmailSettings emailSettings { get; set; }
-    
+        public string ApiKey { get; set; }
     }
 
     public class EmailSettings

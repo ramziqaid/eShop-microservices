@@ -26,9 +26,6 @@ namespace Ordering.Infrastructure.SqlServer
             services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBase<>));
             services.AddScoped<IOrderRepository, OrderRepository>();
 
-            services.Configure<AppIdentitySettings>(c => configuration.GetSection("AppIdentitySettings"));
-            services.AddTransient<IEmailService, EmailService>();
-
             services.AddInfrastructureCoreServices(configuration);
           
             //var logger = services.GetService<ILogger<OrderContextSeed>>();
