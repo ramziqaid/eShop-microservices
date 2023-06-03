@@ -2,6 +2,8 @@
 
 docker run -d -p 27017:27017 --name ShoppingDB mongo
 
+docker run -d --hostname my-rabbit --name some-rabbit -p 8015:15672 rabbitmq
+
 connect databse
 docker exec -it catalogdb /bin/bash
 http://localhost:3000/databaseStats
@@ -52,3 +54,8 @@ docker run -it --rm -p 8081:8081 --name mongoGUI mongo-express
  SqlServer ______________________________________________________________________
  
  docker run -d -p 1433:1434 --name orderdb mcr.microsoft.com/mssql/server:2017-latest
+ 
+ 
+ Rabbitmq ______________________________________________________________________
+ docker run -d --hostname my-rabbit --name some-rabbit -p 8015:15672 rabbitmq
+ docker run -d -p 27017:27017 --name ShoppingDB mongo

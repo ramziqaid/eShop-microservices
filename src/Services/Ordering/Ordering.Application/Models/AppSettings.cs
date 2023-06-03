@@ -9,7 +9,8 @@ namespace Ordering.Application.Models
     public class AppIdentitySettings
     {
         public EmailSettings emailSettings { get; set; }
-        public string ApiKey { get; set; }
+        public RabbitMQ rabbitMQ { get; set; }
+       
     }
 
     public class EmailSettings
@@ -19,4 +20,10 @@ namespace Ordering.Application.Models
         public string FromAddress { get; set; }
         public string FromName { get; set; }
     }
+    public class RabbitMQ
+    {
+        public string url { get; set; }
+        public string BasketCheckOutQueue { get; set; }
+    }
+         
 }

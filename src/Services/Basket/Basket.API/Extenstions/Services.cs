@@ -1,12 +1,13 @@
 ﻿using Basket.API.GrpcServices;
 using Basket.API.Services;
 using Discount.Grpc.Protos;
+using System.Reflection;
 
 namespace Basket.API.Extenstions
 {
     public static class Services
     {
-        public static void Injections(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection Injections(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSingleton<IBasketService, BasketService>(); 
             services.AddStackExchangeRedisCache(option =>
@@ -19,6 +20,8 @@ namespace Basket.API.Extenstions
                 o.Address = new Uri(configuration.GetValue<string>("GrpcSettings:DiscountUrl"));
             });
             services.AddScoped<DiscountGrpcService>();
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            return services;
         }
     }
 }

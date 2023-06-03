@@ -1,4 +1,5 @@
 using Ordering.API.Extensions;
+using Ordering.API.Extenstions;
 using Ordering.Infrastructure.SqlServer.Persistence;
 using Polly;
 
@@ -9,6 +10,7 @@ ConfigurationManager configurationManager = builder.Configuration;
 
 builder.Services.AddControllers();
 builder.Services.Injections(configurationManager);
+builder.Services.AddRabbitMQServices(configurationManager);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -25,9 +27,6 @@ builder.Services.AddSwaggerGen();
 
 
 var app = builder.Build();
-
-
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

@@ -9,6 +9,7 @@ ConfigurationManager configuration = builder.Configuration; // allows both to ac
 
 builder.Services.AddControllers();
 builder.Services.Injections(configuration);
+builder.Services.AddRabbitMQServices(configuration);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

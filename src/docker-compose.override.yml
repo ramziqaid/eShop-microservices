@@ -108,3 +108,9 @@ services:
     ports:
       - "8014:80"
 
+  rabbitmq:
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5673:5672"
+      - "15673:15672"
