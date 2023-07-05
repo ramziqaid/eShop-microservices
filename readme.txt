@@ -1,13 +1,4 @@
-UDEMY COURSE WITH DISCOUNTED - Step by Step Development of this Repository -> https://www.udemy.com/course/microservices-architecture-and-implementation-on-dotnet/?couponCode=JULY23
-
-See the overall picture of implementations on microservices with .net tools on real-world e-commerce microservices project;
-
-microservices_remastered
-
-There is a couple of microservices which implemented e-commerce modules over Catalog, Basket, Discount and Ordering microservices with NoSQL (MongoDB, Redis) and Relational databases (PostgreSQL, Sql Server) with communicating over RabbitMQ Event Driven Communication and using Ocelot API Gateway.
-
-And here continuation of the main course -> Microservices Observability with Distributed Logging, Health Monitoring, Resilient and Fault Tolerance with using Polly
-
+![Screenshot](https://github.com/ramziqaid/eShope/assets/26416031/af4fa728-e281-476d-ae5c-4f752591fbc5)
 --mongo
 
 docker run -d -p 27017:27017 --name ShoppingDB mongo
