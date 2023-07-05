@@ -115,3 +115,4 @@ Web UI -> http://host.docker.internal:8006
 
 Launch http://host.docker.internal:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
 Launch http://host.docker.internal:8006 in your browser to view the Web UI. You can use Web project in order to call microservices over API Gateway. When you checkout the basket you can follow queue record on RabbitMQ dashboard.
+![81381837-08226000-9116-11ea-9489-82645b8dbfc4](https://github.com/ramziqaid/eShope/assets/26416031/f861d0c9-b333-440c-861a-2a420d1c0b07)
