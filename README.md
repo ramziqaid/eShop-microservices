@@ -5,11 +5,11 @@ See the overall picture of **implementations on microservices with .net tools** 
 
 There is a couple of microservices which implemented **e-commerce** modules over **Catalog, Basket, Discount** and **Ordering** microservices with **NoSQL (MongoDB, Redis)** and **Relational databases (PostgreSQL, Sql Server)** with communicating over **RabbitMQ Event Driven Communication** and using **Ocelot API Gateway**.
 
-And here continuation of the main course -> [Microservices Observability with Distributed Logging, Health Monitoring, Resilient and Fault Tolerance with using Polly](https://www.udemy.com/course/microservices-observability-resilience-monitoring-on-net/?referralCode=D162C050483C75452136)
+And here continuation of the main course -> [Microservices Observability with Distributed Logging, Health Monitoring, Resilient and Fault Tolerance with using Polly]
 
 ### Check Explanation of this Repository on Medium
-* [Microservices Architecture on .NET with applying CQRS, Clean Architecture and Event-Driven Communication](https://medium.com/aspnetrun/microservices-architecture-on-net-3b4865eea03f)
-* [Microservices Observability, Resilience, Monitoring on .Net](https://medium.com/aspnetrun/microservices-observability-resilience-monitoring-on-net-a5dfbdbb0fbd)
+* [Microservices Architecture on .NET with applying CQRS, Clean Architecture and Event-Driven Communication]
+* [Microservices Observability, Resilience, Monitoring on .Net]
 
 ## Whats Including In This Repository
 We have implemented below **features over the run-aspnetcore-microservices repository**.
@@ -96,7 +96,7 @@ Follow these steps to get your development environment set up: (Before Run Start
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 ```
 
->Note: If you get connection timeout error Docker for Mac please [Turn Off Docker's "Experimental Features".](https://github.com/aspnetrun/run-aspnetcore-microservices/issues/33)
+>Note: If you get connection timeout error Docker for Mac please [Turn Off Docker's "Experimental Features".]
 
 4. Wait for docker compose all microservices. That’s it! (some microservices need extra time to work so please wait if not worked in first shut)
 
@@ -124,7 +124,4 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 
 >Note: If you are running this application in macOS then use `docker.for.mac.localhost` as DNS name in `.env` file and the above URLs instead of `host.docker.internal`.
 
-
-
-See also the list of [contributors](https://github.com/aspnetrun/run-core/contributors) who participated in this project. Check also [gihtub page of repository.](https://aspnetrun.github.io/run-aspnetcore-angular-realworld/)
 
